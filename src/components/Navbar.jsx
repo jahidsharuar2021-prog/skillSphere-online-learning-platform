@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="border-b px-2">
+    <div className="border-b px-2 bg-white border-b border-slate-200 sticky top-0 z-50">
       <nav className=" flex justify-between items-center  py-3 max-w-7xl mx-auto w-full">
         <div className="flex gap-2 items-center">
           <Image
@@ -23,10 +23,10 @@ const Navbar = () => {
             <Link href={"/"}>Home</Link>
           </li>
           <li>
-            <Link href={"/all-photos"}>Courses</Link>
+            <Link href={"/courses"}>Courses</Link>
           </li>
           <li>
-            <Link href={"/pricing"}>My Profile</Link>
+            <Link href={"/profile"}>My Profile</Link>
           </li>
         </ul>
 
