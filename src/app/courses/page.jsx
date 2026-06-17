@@ -14,7 +14,7 @@ const Toprating = async () => {
   return (
     <div>
       <div>
-        <h1 className="text-2xl font-bold my-5"> Popular Courses</h1>
+        <h1 className="text-2xl font-bold my-5"> All Courses Page</h1>
 
         <div className="grid grid-cols-3 gap-5 ">
           {topcourses.map((topcourse) => (

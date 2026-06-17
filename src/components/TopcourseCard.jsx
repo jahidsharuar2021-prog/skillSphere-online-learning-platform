@@ -43,11 +43,8 @@ const TopcourseCard = ({ topcourse }) => {
         </div>
       </div>
 
-      <Link href={`/all-photos/${topcourse.id}`}>
-        {" "}
-        <Button variant="outline" className={"w-full"}>
-          View Details
-        </Button>
+      <Link href={`/courses/${topcourse.id}`}>
+        <Button variant="outline" className={"w-full"}> View Details </Button>
       </Link>
     </Card>
   );
