@@ -2,9 +2,7 @@ import TopcourseCard from "@/components/TopcourseCard";
 
 
 const Toprating = async () => {
-  const res = await fetch(
-    "https://skill-sphere-online-learning-platfo-ashy.vercel.app/data.json",
-  );
+  const res = await fetch("http://localhost:3000/data.json");
   const courses = await res.json();
   console.log(courses);
 

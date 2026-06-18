@@ -8,7 +8,7 @@ const CourseDetailsPage = async ({ params }) => {
   console.log(id);
 
   const res = await fetch(
-    "https://skill-sphere-online-learning-platfo-ashy.vercel.app/data.json",
+    "http://localhost:3000/data.json",
   );
   const courses = await res.json();
 
