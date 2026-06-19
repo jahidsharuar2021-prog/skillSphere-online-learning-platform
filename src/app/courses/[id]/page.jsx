@@ -2,14 +2,13 @@ import Image from "next/image";
 import { Card, Separator } from "@heroui/react";
 import { FaChalkboardTeacher, FaStar } from "react-icons/fa";
 import { GiLevelTwo } from "react-icons/gi";
+export const dynamic = "force-dynamic";
 
 const CourseDetailsPage = async ({ params }) => {
   const { id } =await params;
   console.log(id);
 
-  const res = await fetch(
-    "http://localhost:3000/data.json",
-  );
+  const res = await fetch("https://skillsphere-five-tau.vercel.app/data.json");
   const courses = await res.json();
 
   const course = courses.find((p) => p.id == id);

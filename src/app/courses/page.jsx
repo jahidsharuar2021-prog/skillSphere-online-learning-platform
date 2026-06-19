@@ -1,8 +1,8 @@
 import TopcourseCard from "@/components/TopcourseCard";
-
+export const dynamic = "force-dynamic";
 
 const Toprating = async () => {
-  const res = await fetch("http://localhost:3000/data.json");
+  const res = await fetch("https://skillsphere-five-tau.vercel.app/data.json");
   const courses = await res.json();
   console.log(courses);
 
