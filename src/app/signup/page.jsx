@@ -12,6 +12,7 @@ import {
   TextField,
 } from "@heroui/react";
 import { useRouter } from "next/navigation";
+import { GrGoogle } from "react-icons/gr";
 
 export default function SignUpPage() {
   const router= useRouter()
@@ -32,9 +33,15 @@ export default function SignUpPage() {
      });
      if(!error){
         router.push('/');
-     }
-    
+     } 
   };
+
+    const handleGoogleSignIn =async()=>{
+     await authClient.signIn.social({
+      provider:'google'
+     })
+    }
+  
 
  
   return (
@@ -108,6 +115,11 @@ export default function SignUpPage() {
           </Button>
         </div>
       </Form>
+        <p className="text-center">Or</p>
+            <Button onClick={handleGoogleSignIn} variant="outline" className="w-full">
+              <GrGoogle />
+              Register with Google
+            </Button>
     </Card>
   );
 }
