@@ -74,7 +74,7 @@ export default function SignUpPage() {
           }}
         >
           <Label>Email</Label>
-          <Input placeholder="john@example.com" />
+          <Input placeholder="Enter your email" />
           <FieldError />
         </TextField>
 
@@ -115,11 +115,11 @@ export default function SignUpPage() {
           </Button>
         </div>
       </Form>
-        <p className="text-center">Or</p>
-            <Button onClick={handleGoogleSignIn} variant="outline" className="w-full">
-              <GrGoogle />
-              Register with Google
-            </Button>
+      <p className="text-center">Or</p>
+      <Button onClick={handleGoogleSignIn} variant="outline" className="w-full">
+        <GrGoogle />
+        Register with Google
+      </Button>
     </Card>
   );
 }
