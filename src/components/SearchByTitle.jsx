@@ -30,7 +30,7 @@ const SearchByTitle = ({ courses }) => {
       </SearchField>
 
       {/* CARDS */}
-      <div className="grid grid-cols-3 gap-5 mt-5">
+      <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-5 mt-5">
         {filteredCourses.map((course) => (
           <TopcourseCard key={course.id} topcourse={course} />
         ))}

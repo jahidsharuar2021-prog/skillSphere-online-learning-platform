@@ -30,13 +30,13 @@ const LearningTips  =async () => {
             </p>
           </div>
 
-          <div className=" grid grid-cols-2 gap-8  ">
+          <div className=" grid sm:grid-cols-1 lg:grid-cols-2 gap-8  ">
             <div>
               <h3 className="text-2xl font-bold m-3 text-[#f43098]">
                 Learning Tips
               </h3>
 
-              <div className=" grid grid-cols-3 gap-3 py-4">
+              <div className=" grid sm:grid-cols-1 lg:grid-cols-3 gap-3 py-4">
                 {" "}
                 {tips.map((tip) => (
                   <Card
@@ -57,7 +57,7 @@ const LearningTips  =async () => {
                 {" "}
                 Top Instructors Section{" "}
               </h3>
-              <div className=" grid grid-cols-3 gap-3 p-2">
+              <div className=" grid sm:grid-cols-1 lg:grid-cols-3 gap-3 p-2">
                 {" "}
                 {tips.map((tip) => (
                   <Card

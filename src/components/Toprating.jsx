@@ -16,7 +16,7 @@ const Toprating =async () => {
         <div>
           <h1 className="text-2xl font-bold my-5"> Popular Courses</h1>
 
-          <div className="grid grid-cols-3 gap-5 ">
+          <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-5 ">
             {topcourses.map((topcourse) => (
               <TopcourseCard key={topcourse.id} topcourse={topcourse} />
             ))}
