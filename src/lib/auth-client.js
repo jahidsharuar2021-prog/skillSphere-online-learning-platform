@@ -4,7 +4,7 @@ export const authClient = createAuthClient({
 
 
   // baseURL: "https://skillsphere-five-tau.vercel.app",
-  baseURL: "http://localhost:3000",
+  baseURL: "https://skillsphere-five-tau.vercel.app",
 
   
 });

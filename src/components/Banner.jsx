@@ -15,14 +15,14 @@ const Banner = () => {
           </p>
 
           <div className="flex gap-4">
-            <Link href="#">
-              <Button className="bg-linear-to-r from-pink-500 via-purple-500 bg-red-500">
+            <Link href="/upgradeskill">
+              <Button className="cursor-pointer bg-linear-to-r from-pink-500 via-purple-500 bg-red-500">
                 Start Learning
               </Button>
             </Link>
 
-            <Link href="/pricing">
-              <Button variant="outline" className="text-white">
+            <Link href="/courses">
+              <Button variant="outline" className="cursor-pointer text-white">
                 Explore Courses
               </Button>
             </Link>
