@@ -1,3 +1,4 @@
+
 import { Button, Card, Chip, Separator } from "@heroui/react";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import Image from "next/image";
@@ -17,7 +18,10 @@ const TopcourseCard = ({ topcourse }) => {
           alt={topcourse.name}
           className=" object-cover rounded-xl transition-transform duration-300 group-hover:scale-105"
         />
-        <Chip size="small" className="absolute right-2 top-2">
+        <Chip
+          size="small"
+          className="absolute right-2 top-2  bg-blue-100 text-blue-700"
+        >
           {topcourse.category}
         </Chip>
       </div>
@@ -44,7 +48,10 @@ const TopcourseCard = ({ topcourse }) => {
       </div>
 
       <Link href={`/courses/${topcourse.id}`}>
-        <Button variant="outline" className={"w-full"}> View Details </Button>
+        <Button variant="outline" className={"w-full"}>
+          {" "}
+          View Details{" "}
+        </Button>
       </Link>
     </Card>
   );

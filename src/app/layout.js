@@ -3,11 +3,10 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+
 const OutfintFont = Outfit({
   subsets: ["latin"],
 });
-
-
 
 export const metadata = {
   title: "Create Next App",
@@ -19,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${OutfintFont.className} h-full antialiased`}>
       <body className="min-h-full flex flex-col  bg-slate-50 text-slate-900">
         <Navbar></Navbar>
-        <main className="max-w-7xl mx-auto w-full">{children}</main>
+        <main className="max-w-7xl mx-auto w-full">{children}</main>    
         <Footer></Footer>
       </body>
     </html>
