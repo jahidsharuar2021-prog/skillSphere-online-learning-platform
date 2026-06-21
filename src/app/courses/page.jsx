@@ -1,3 +1,4 @@
+import SearchByTitle from "@/components/SearchByTitle";
 import TopcourseCard from "@/components/TopcourseCard";
 export const dynamic = "force-dynamic";
 
@@ -12,7 +13,10 @@ const Toprating = async () => {
   return (
     <div>
       <div>
-        <h1 className="text-2xl font-bold my-5"> All Courses Page</h1>
+        {/* <div className="flex  justify-between my-5"> */}
+          <h1 className="text-3xl font-bold "> All Courses Page</h1>
+          {/* <SearchByTitle></SearchByTitle> */}
+        {/* </div> */}
 
         <div className="grid grid-cols-3 gap-5 ">
           {topcourses.map((topcourse) => (
